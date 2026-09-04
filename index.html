@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Print Express - Impresiones, fotocopias, trabajos escolares y personalizados en Guabito, Panamá.">
+  <title>Print Express | Impresiones y personalizados</title>
+  <style>
+    :root{
+      --primary:#5b3b20;
+      --accent:#e5b95c;
+      --cream:#fffaf2;
+      --dark:#241b16;
+      --muted:#6f6258;
+      --white:#ffffff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,Helvetica,sans-serif;background:var(--cream);color:var(--dark);line-height:1.6}
+    a{text-decoration:none}
+    .container{width:min(1100px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(255,250,242,.96);backdrop-filter:blur(8px);border-bottom:1px solid #eadfce}
+    nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .logo{font-size:1.45rem;font-weight:800;color:var(--primary);letter-spacing:-.5px}
+    .logo span{color:var(--accent)}
+    .navlinks{display:flex;gap:22px;align-items:center}
+    .navlinks a{color:var(--dark);font-weight:600;font-size:.95rem}
+    .btn{display:inline-block;background:var(--primary);color:white;padding:13px 21px;border-radius:10px;font-weight:700;transition:.2s}
+    .btn:hover{transform:translateY(-2px);background:#402713}
+    .btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+    .hero{padding:80px 0 70px;background:linear-gradient(135deg,#fffaf2 0%,#f5e5c7 100%)}
+    .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:45px;align-items:center}
+    .badge{display:inline-block;background:#f2d89c;color:#604116;padding:7px 13px;border-radius:99px;font-size:.85rem;font-weight:bold;margin-bottom:15px}
+    h1{font-size:clamp(2.4rem,6vw,4.6rem);line-height:1.05;color:var(--primary);margin-bottom:20px}
+    .hero p{font-size:1.1rem;color:var(--muted);max-width:620px;margin-bottom:28px}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+    .hero-card{background:var(--primary);color:white;border-radius:28px;padding:35px;box-shadow:0 20px 40px rgba(70,45,20,.18)}
+    .hero-card .icon{font-size:4rem;margin-bottom:10px}
+    .hero-card h2{font-size:1.5rem;margin-bottom:8px}
+    section{padding:75px 0}
+    .section-title{text-align:center;margin-bottom:42px}
+    .section-title h2{font-size:2.2rem;color:var(--primary)}
+    .section-title p{color:var(--muted);margin-top:8px}
+    .services{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:white;border:1px solid #eee2d1;border-radius:18px;padding:25px;box-shadow:0 8px 24px rgba(64,39,19,.05)}
+    .card .emoji{font-size:2.2rem;margin-bottom:12px}
+    .card h3{color:var(--primary);margin-bottom:7px}
+    .card p{color:var(--muted);font-size:.96rem}
+    .about{background:#f4e5cf}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+    .about-box{background:white;border-radius:22px;padding:35px}
+    .about-box h2{font-size:2rem;color:var(--primary);margin-bottom:15px}
+    .check{display:flex;gap:10px;margin:12px 0;color:#4f463e}
+    .check b{color:var(--accent)}
+    .contact-wrap{background:var(--primary);border-radius:28px;padding:45px;color:white;display:grid;grid-template-columns:1fr 1fr;gap:35px}
+    .contact-wrap h2{font-size:2.2rem;margin-bottom:10px}
+    .contact-wrap p{color:#f3e6d8;margin-bottom:22px}
+    .info{display:grid;gap:14px}
+    .info div{background:rgba(255,255,255,.1);padding:14px;border-radius:10px}
+    .whatsapp{background:#25D366;color:white;padding:15px 22px;border-radius:10px;font-weight:bold;display:inline-block}
+    footer{background:#1e1611;color:#cdbfae;padding:25px 0;text-align:center;font-size:.9rem}
+    @media(max-width:760px){
+      .navlinks{display:none}
+      .hero{padding:60px 0}
+      .hero-grid,.about-grid,.contact-wrap{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .hero-card{padding:28px}
+      section{padding:55px 0}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <div class="logo">PRINT <span>EXPRESS</span></div>
+    <div class="navlinks">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a class="btn" href="https://wa.me/50768964176" target="_blank">WhatsApp</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge">🖨️ Tu solución rápida y confiable</span>
+        <h1>Todo lo que necesitas para imprimir y crear</h1>
+        <p>En <strong>Print Express</strong> te ayudamos con impresiones, fotocopias, trabajos escolares y una gran variedad de productos personalizados.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://wa.me/50768964176" target="_blank">📲 Escríbenos por WhatsApp</a>
+          <a class="btn btn-outline" href="#servicios">Ver servicios</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="icon">✨🖨️</div>
+        <h2>Rápido, práctico y personalizado</h2>
+        <p>Cuéntanos tu idea y nosotros te ayudamos a hacerla realidad.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicios">
+    <div class="container">
+      <div class="section-title">
+        <h2>Nuestros servicios</h2>
+        <p>Soluciones para estudiantes, negocios y celebraciones especiales.</p>
+      </div>
+      <div class="services">
+        <article class="card"><div class="emoji">🖨️</div><h3>Impresiones</h3><p>Documentos, tareas, investigaciones y mucho más.</p></article>
+        <article class="card"><div class="emoji">📄</div><h3>Fotocopias</h3><p>Copias rápidas y prácticas para tus necesidades diarias.</p></article>
+        <article class="card"><div class="emoji">📚</div><h3>Trabajos escolares</h3><p>Apoyo con investigaciones y presentación de trabajos.</p></article>
+        <article class="card"><div class="emoji">🎉</div><h3>Piñatas</h3><p>Diseños especiales para hacer tus celebraciones inolvidables.</p></article>
+        <article class="card"><div class="emoji">🎁</div><h3>Recordatorios</h3><p>Detalles personalizados para eventos y ocasiones especiales.</p></article>
+        <article class="card"><div class="emoji">🎂</div><h3>Personalizados</h3><p>Cake toppers, chip bags y otros productos hechos para ti.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="nosotros">
+    <div class="container about-grid">
+      <div>
+        <div class="section-title" style="text-align:left;margin-bottom:0">
+          <h2>¿Por qué elegir Print Express?</h2>
+          <p>Trabajamos para ayudarte a resolver tus necesidades de impresión y personalizados de forma sencilla.</p>
+        </div>
+      </div>
+      <div class="about-box">
+        <div class="check"><b>✓</b> Atención personalizada</div>
+        <div class="check"><b>✓</b> Trabajos para estudiantes</div>
+        <div class="check"><b>✓</b> Productos para celebraciones</div>
+        <div class="check"><b>✓</b> Pedidos por WhatsApp</div>
+        <div class="check"><b>✓</b> Horario conveniente</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <div class="contact-wrap">
+        <div>
+          <h2>¡Contáctanos!</h2>
+          <p>¿Necesitas una impresión o tienes una idea para un producto personalizado? Escríbenos y cotiza con nosotros.</p>
+          <a class="whatsapp" href="https://wa.me/50768964176" target="_blank">💬 WhatsApp: 6896-4176</a>
+        </div>
+        <div class="info">
+          <div><strong>📅 Horario</strong><br>Lunes a sábado</div>
+          <div><strong>🕘 Atención</strong><br>9:00 a.m. en adelante</div>
+          <div><strong>📱 Pedidos</strong><br>6896-4176</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Print Express · Impresiones y personalizados</div>
+</footer>
+</body>
+</html>
